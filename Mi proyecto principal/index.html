@@ -9,10 +9,137 @@
 </head>
 
 <body>
-    <h1 style="color: red;">Hola mundo</h1>
-    <h2 style="color: blue;">Hola mundo</h2>
-    <h3 style="color: orange;">Hola mundo</h3>
-    <h4 style="color: gray;">Hola mundo</h4>
+    <style>
+        header {
+            border: solid 1px #286c45;
+            text-align: center;
+            border-radius: 5px;
+            background: #286c45;
+            color: white;
+            height: 45px;
+            padding-top: 21px;
+            cursor: pointer;
+        }
+        header:hover{
+            background-color: rgb(48, 48, 82);
+            height: 50px;
+            font-size: 18px;
+        }
+        nav {
+            width: 100%;
+            border: solid 1px gray;
+            border-radius: 5px;
+            margin-top: 8px;
+            background: gray;
+            color: white;
+            text-align: center;
+        }
+        section {
+            border: solid 1px gray;
+            width: 60%;
+        }
+        footer {
+            background-color: #00bcd4;
+            text-align: center;
+            margin-top: 7px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: black;
+            font-style: italic;
+            font-weight: bold;
+        }
+        #holasoyid{
+            color: blue;
+            position: absolute;
+            top: 35%;
+        left: 31%;
+        }
+        #holasoyid2{
+            color: green;
+        }
+        .fondo{
+            background: aqua;
+        }
+        .centrado{
+            text-align: center;
+            font-style: oblique;
+            font-weight: bold;
+        }
+        .tamano_55{
+            font-size: 55px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+        }
+        th {
+            text-align: left;
+        }
+        table {
+            border-spacing: 5px;
+        }
+    </style>
+    
+    <header>
+        Aqui van los logos
+    </header>
+
+    <nav>
+        Aqui van los menus
+    </nav>
+
+    <section class="centrado">
+        Aqui va la seccion
+        <h1 style="color: red;">Hola mundo</h1>
+        <h2 style="color: blue;">Hola mundo</h2>
+        <h3 style="color: orange;">Hola mundo</h3>
+        <h4 style="color: gray;" class="tamano_55">Hola mundo</h4>
+    </section>
+
+    <footer>
+        Pie de pagina
+    </footer>
+
+    <div id="holasoyid" class="fondo centrado tamano_55">
+        +
+    </div>
+
+    <div id="holasoyid" class="fondo centrado">
+        -
+    </div>
+
+    <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+
+      <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+          <td>Bill Gates</td>
+          <td>55577854</td>
+          <td>55577855</td>
+        </tr>
+      </table>
 </body>
 
 </html>

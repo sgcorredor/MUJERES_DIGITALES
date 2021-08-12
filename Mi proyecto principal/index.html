@@ -11,69 +11,37 @@
 </head>
 
 <body>
-    
-    <input type="text" id="nombre" class="txtcaja" placeholder="nombre">
-    <input type="number" id="cedula" class="txtcaja" placeholder="cedula">
-    <input type="password" id="password" class="txtcaja" placeholder="password">
-    <input type="date" id="txtfechanacimiento">
-    <input type="file" id="subirarchivo">
-
-    <table>
-        <tr>
-          <th>Nombre</th>
-          <th>Apellido</th>
-          <th>Direccion</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>jkljoidzkz</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>ldvclñfmv</td>
-        </tr>
-        <tr>
-          <td>Ana</td>
-          <td>Thompson</td>
-          <td>jdduidfnn</td>
-        </tr>
-      </table>
-
-      <ul>
-          <li>lista 1</li>
-          <li>lista 2</li>
-          <li>lista 3</li>
-          <li>lista 4</li>
-      </ul>
-
-      <ol>
-        <li>lista 1</li>
-        <li>lista 2</li>
-        <li>lista 3</li>
-        <li>lista 4</li>
-    </ol>
-    
-    <label for="genero">Seleccione el genero</label>
-    <select name="genero" id="genero">
-        <option value="F">Femenino</option>
-        <option value="M">Masculino</option>
-    </select>
-   
-    <textarea id="comentarios" rows="4" cols="50"></textarea>
-
-    <input type="button" value="enviar" id="elboton">
-
-    <div id="otroboton" class="btn">enviar</div>
-    <div id="otroboton2" class="btn">borrar</div>
-
-    <img src="https://png.pngtree.com/thumb_back/fh260/background/20210521/pngtree-abstract-purple-blue-watercolor-water-mark-background-image_717238.jpg">
-
-    <a href="contactenos.html">contactenos</a>
-    <a href="contactenos.html">
-      <img src="https://png.pngtree.com/thumb_back/fh260/background/20210521/pngtree-abstract-purple-blue-watercolor-water-mark-background-image_717238.jpg" style="width: 20px; height: 20px;">
-    </a>
+  <style>
+    .flex-container{
+      display:flex;
+      font-size: 50px;
+      background: rgb(170, 205, 206);
+      height: 500px;
+      flex-wrap: wrap;
+      align-content: stretch;
+      text-align: center;
+    }
+    .flex-container div{
+      width: 30px;
+      margin: 30px;
+      background: aquamarine;
+      line-height: 50px;
+    }
+  </style>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
 </body>
 
 </html>

@@ -11,37 +11,53 @@
 </head>
 
 <body>
-  <style>
-    .flex-container{
-      display:flex;
-      font-size: 50px;
-      background: rgb(170, 205, 206);
-      height: 500px;
-      flex-wrap: wrap;
-      align-content: stretch;
-      text-align: center;
+ <script>
+   var valor1 = 0;
+   var valor2 = 0;
+   var nommbre = "Silvia"
+   var apellido = "Corredor"
+  
+   var multiplicar = function(){
+     console.log(valor1*valor2)
     }
-    .flex-container div{
-      width: 30px;
-      margin: 30px;
-      background: aquamarine;
-      line-height: 50px;
+     
+    var sumar = function(){
+      console.log(valor1+valor2)
     }
-  </style>
-  <div class="flex-container">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-  </div>
+
+    var restar = function(){
+      console.log(valor1-valor2)
+    }
+
+    var dividir = function(){
+      console.log(valor1/valor2)
+    }
+
+    var nombrecompleto = function(){
+      console.log(nommbre+" "+apellido)
+    }
+
+    var obtener = function(){
+      console.log("Obteniendo datos") 
+      var a = document.getElementById("prueba1").value
+      var b = document.getElementById("prueba2").value
+      valor1 = parseInt(a);
+      valor2 = parseInt(b);
+
+    }
+  
+
+ </script> 
+
+ <input type="text" id="prueba1">
+ <input type="text" id="prueba2">
+
+ <div onclick="multiplicar()">multiplicar</div>
+ <div onclick="sumar()">sumar</div>
+ <div onclick="restar()">restar</div>
+ <div onclick="dividir()">dividir</div>
+ <div onclick="nombrecompleto()">Nombre Completo</div>
+ <div onclick="obtener()">Opteniendo datos</div>
 </body>
 
 </html>

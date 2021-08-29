@@ -1,0 +1,43 @@
+body {
+    margin: 10px;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: rgb(2, 34, 2);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container-fluid {
+    background-color: #dbf0da;
+    font-weight: bolder;
+    
+}
+
+.navbar-bran {
+    color: rgb(2, 59, 2);
+}
+
+.principal-title {
+    color: ivory;
+    text-shadow: rgb(104, 102, 102);
+    text-align: center;
+    font-size: 4rem;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.card {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}

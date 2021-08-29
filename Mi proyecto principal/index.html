@@ -11,185 +11,8 @@
 </head>
 
 <body>
- <script>
-   var valor1 = 0;
-   var valor2 = 0;
-   var nommbre = "Silvia"
-   var apellido = "Corredor"
-  
-   var multiplicar = function(){
-     console.log(valor1*valor2)
-    }
-     
-    var sumar = function(){
-      console.log(valor1+valor2)
-    }
 
-    var restar = function(){
-      console.log(valor1-valor2)
-    }
-
-    var dividir = function(){
-      console.log(valor1/valor2)
-    }
-
-    var nombrecompleto = function(){
-      console.log(nommbre+" "+apellido)
-    }
-
-    var obtener = function(){
-      console.log("Obteniendo datos") 
-      var a = document.getElementById("prueba1").value
-      var b = document.getElementById("prueba2").value
-      valor1 = parseInt(a);
-      valor2 = parseInt(b);
-
-    }
-    for (var index = 0; index <= 20; index++) {
-      console.log ("5" + "X" + index + "=" + (5 * index))
-    }
-
-    /*for(var pedro = 0; pedro = 5; pedro++){
-      console.log(pedro)
-    }*/
-    
-    // IF ES UN CONDICIONAL 
-    
-    if(4<5 && 3>5 && 4<6 && 8==8){ //&& = condicion "Y"
-      console.log("si se cumple la condicion")
-    }else{
-      console.log("no se cumple la condicion")
-    }
-
-    if(1==2 || 4==4 || 3!=7) { //|| = condicion "O"
-      console.log("si se cumple la condicion")
-    }else{
-      console.log("no se cumple la condicion")
-    }
-
-    if(true != false) { //Diferencia
-      console.log("si se cumple la condicion")
-    }else{
-      console.log("no se cumple la condicion")
-    }
-
-    if(true == false) { //Igualdad
-      console.log("si se cumple la condicion")
-    }else{
-      console.log("no se cumple la condicion")
-    }
-
-    if("Silvia" == "silvia") { 
-      console.log("si se cumple la condicion")
-    }else{
-      console.log("no se cumple la condicion")
-    }
-
-    if(5 == "5") { 
-      console.log("si se cumple la condicion")
-    }else{
-      console.log("no se cumple la condicion")
-    }
-
-    if(true) { 
-      console.log("si se cumple la condicion")
-    }
-    else{
-      console.log("no se cumple la condicion")
-    }
-    
-    //WHILW
-
-    /*var datos1 = 100
-    while (datos1 < 120) {
-      console.log("Imprimir")
-      datos1 == 50000;
-    }*/
-
-    var datos1 = 100
-    while (datos1 < 120) {
-      console.log("Imprimir")
-      datos1 = datos1 + 1;
-    }
-
-    var nombre = ' '
-    while (nombre == ' ') {
-      console.log("Imprimir")
-      nombre = 'Silvia';
-    }
-
-    var booestado = true
-    while (booestado) {
-      console.log("Imprimir")
-      booestado = false;
-    }    
-
-    var booestado = true;
-    var contador = 0;
-    while (booestado) {
-      contador = contador + 1
-      console.log("Imprimir")
-      if (contador == 10) {
-        booestado = false;
-      }
-    }
-    
-    //SWITCH - Heranito de IF
-
-    /*var dato = 100
-    switch (dato) {
-      case 100:
-        console.log("el valor es 100")
-        break;
-      case 200:
-        console.log("el valor es 200")
-        break;
-      case 300:
-        console.log("el valor es 300")
-        break;
-      default:
-        console.log("ninguno")
-        break;
-    } */   
-
-    /*var dato = 100
-    var analizar = function(){
-      switch (dato) {
-      case 100:
-        console.log("el valor es 100")
-        break;
-      case 200:
-        console.log("el valor es 200")
-        break;
-      case 300:
-        console.log("el valor es 300")
-        break;
-      default:
-        console.log("ninguno")
-        break;
-      }
-    dato = dato + 100
-    }*/
-    
-    var dato = 100
-    var analizar = function(){
-      if (dato == 100){
-        console.log("el valor es 100");
-      }
-      if (dato == 200){
-        console.log("el valor es 200");
-      }  
-      if (dato == 300){
-        console.log("el valor es 300");
-      }
-      if (dato != 100 && dato != 200 && dato != 300) {
-        console.log("ninguno")
-      }
-    dato = dato + 100
-    }
- </script> 
-
- <input type="text" id="prueba1">
+ <input type="text" id="prueba1" value="100">
  <input type="text" id="prueba2">
 
  <div onclick="multiplicar()">multiplicar</div>
@@ -199,6 +22,16 @@
  <div onclick="nombrecompleto()">Nombre Completo</div>
  <div onclick="obtener()">Opteniendo datos</div>
  <div onclick="analizar()">Analizar</div>
+ 
+ <!-- <input type="text" id="minombre1" class="pruebax" name="xx"> -->
+ 
+ <input type="text" id="minombre" class="pruebax">
+ <div onclick="agregrinformacion()">Agregar dato</div>
+
+ <div id="contenedordedatos">
+   vacio
+ </div>
+ <script src="./index.js"></script>
 </body>
 
 </html>

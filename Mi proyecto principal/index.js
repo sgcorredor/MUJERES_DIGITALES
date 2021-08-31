@@ -242,15 +242,83 @@ var multiplicar = function(){
         console.log(listadedatos)
     }
     */
-    
+    /*
     var contenedor = document.getElementById('contenedordedatos')
     var listadedatos = [];
     var agregrinformacion = function() {
         var nombre = document.getElementsByName("xx").value
         listadedatos.push(nombre)
-
+        
+        contenedor.innerHTML = ""
         for(var a = 0; a < listadedatos.length; a++){
-          contenedor.innerHTML = contenedor.innerHTML + listadedatos[a]
+          contenedor.innerHTML = contenedor.innerHTML + "<h1>" + listadedatos[a] + "</h1>"
+        
         }
              
     }
+    */
+
+    var tabla = document.getElementById("tablademultiplicar")
+
+    var datox = []
+    
+    function agregarcontenido(){
+      datox.push('silvia')
+      datox.push('camila')
+      datox.push('ana')
+    }
+    
+    function mostrardatos(){
+      tabla.innerHTML = ''
+      for(var a =0; a = datox.length; a++){
+        tabla.innerHTML = tabla.innerHTML + datox[a] + '<br>'
+      }
+    }
+    
+
+    // var mivariablearray = ["goku","gohan","roshi","krilin"]
+    // var tmp = ["juan","pedro"]
+    
+    // para eliminar registro
+    // mivariablearray.pop() 
+
+    // cambiar el orden
+    // mivariablearray.reverse()
+
+    // para convetir el array en cadena de texto separado por caracter
+    // var temporal = mivariablearray.join("-")
+    
+    // para ver el numero de datos registrados 
+    // var x = mivariablearray.length;
+
+    // Splice para eliminar varios egistros
+    // mivariablearray.splice(2,3)
+
+    /*
+    for (key of mivariablearray.keys()){
+      console.log(key)
+      tabla.innerHTML = tabla.innerHTML + key + '<br>'
+      mivariablearray.splice(key,1)
+    }
+    */
+    // Concatenar (agegar) datos 
+    // var x = mivariablearray.concat(tmp)
+
+    var mivariablearray = ["goku","gohan","roshi","krilin"]
+    
+    // paa encontra informacion y mostrar a posicion en que se encuentra(indexOf)
+    // var x = mivariablearray.indexOf("roshi")
+
+    var buscarycambiar = function(){
+      var criteriodebusqueda = document.getElementById("criterio").value
+      var posicion = mivariablearray.indexOf(criteriodebusqueda)
+      if(posicion > 0){
+        //mivariablearray[posicion] = "Borrado"
+        mivariablearray.splice(posicion,1)
+        console.log(mivariablearray)
+      }
+      else{
+        alert("no se encuentra ese dato")
+      }
+    }
+    
